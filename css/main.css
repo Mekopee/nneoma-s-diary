@@ -49,7 +49,27 @@ body {
     animation: fadeIn 0.5s ease-in 1 forwards;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+@media only screen and (max-width: 1000px) {
+    .container {
+      max-width: 80%;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+
+  @media only screen and (max-width: 400px) {
+    .container {
+      max-width: 100%;
+    }
+    .imgs {
+        display: grid;
+        grid-template-columns: repeat(10, 2fr);
+        grid-gap: 3px;
+        width: 100%;
+        
+    }
   }
